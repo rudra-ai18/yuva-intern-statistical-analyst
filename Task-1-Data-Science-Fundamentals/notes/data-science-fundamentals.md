@@ -115,3 +115,32 @@ The important process is to understand a real-world problem, work with relevant 
 ---
 
 **Day 1 Status: Complete ✅**
+
+
+## Day 2 — Data Science Lifecycle & Types of Analysis
+
+### Data Science Lifecycle
+
+1. **Problem Definition:** Clearly define the real-world question or problem to solve.
+2. **Data Collection:** Gather relevant data from sources such as databases, APIs, surveys, files, or public datasets.
+3. **Data Cleaning:** Handle missing values, duplicates, incorrect values, inconsistent formats, and other data-quality problems.
+4. **Exploratory Data Analysis (EDA):** Explore the data using summaries, statistics, tables, and visualizations to understand patterns and relationships.
+5. **Analysis / Modeling:** Apply statistical techniques or machine learning models when needed.
+6. **Evaluation:** Check whether the analysis or model gives reliable and useful results.
+7. **Communication:** Present the findings clearly so that other people can understand and use them.
+8. **Deployment & Monitoring:** Put a useful solution into a real system and monitor its performance over time.
+
+### Four Types of Data Analysis
+
+| Type | Main Question | Example |
+|---|---|---|
+| **Descriptive** | What happened? | February sales decreased from ₹10 lakh to ₹8 lakh. |
+| **Diagnostic** | Why did it happen? | Investigating whether product stock-outs caused the sales decrease. |
+| **Predictive** | What may happen? | Estimating next month's sales from previous sales data. |
+| **Prescriptive** | What should we do? | Recommending actions such as improving inventory or marketing. |
+
+### Key Takeaway
+
+A Data Science project starts with a clear problem, not with coding. The lifecycle helps move from a business problem to useful insights, while the four types of analysis answer different kinds of questions.
+
+**Day 2 Status: Complete ✅**
