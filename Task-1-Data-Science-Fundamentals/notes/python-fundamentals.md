@@ -271,3 +271,131 @@ The main concepts learned today are `if`, `if/else`, `if/elif/else`, `for`, `ran
 ---
 
 **Day 4 Status: Complete ✅**
+
+
+## Day 5 — Data Structures & File Handling
+
+### 1. Lists
+
+A list stores multiple values in an ordered and changeable collection.
+
+```python
+marks = [78, 85, 65, 92]
+print(marks[0])
+print(marks[-1])
+
+marks[0] = 80
+marks.append(88)
+marks.remove(65)
+
+print(len(marks))
+
+for mark in marks:
+    print(mark)
+```
+
+Lists use zero-based indexing, so the first item is at index 0.
+
+### 2. List Slicing
+
+Slicing selects part of a list.
+
+```python
+marks = [78, 85, 65, 92, 88]
+print(marks[1:4])
+```
+
+The stop index is not included.
+
+### 3. Tuples
+
+A tuple is an ordered collection whose elements cannot be changed after creation.
+
+```python
+coordinates = (27.17, 78.01)
+print(coordinates[0])
+```
+
+**List = changeable**
+
+**Tuple = fixed**
+
+### 4. Dictionaries
+
+A dictionary stores data as key-value pairs.
+
+```python
+student = {
+    "name": "Rudra",
+    "age": 21,
+    "city": "Agra",
+    "marks": 85
+}
+
+print(student["name"])
+print(student["marks"])
+
+student["marks"] = 90
+student["course"] = "Data Science"
+```
+
+Dictionaries are useful when different pieces of information need meaningful keys.
+
+### 5. Sets
+
+A set stores unique values.
+
+```python
+numbers = {1, 2, 3, 3, 4}
+print(numbers)
+```
+
+Duplicate values are automatically removed.
+
+Sets are useful when only unique values are needed.
+
+### 6. File Handling
+
+Files can be opened in different modes, including read (`r`), write (`w`), and append (`a`).
+
+#### Reading
+
+```python
+with open("data.txt", "r") as file:
+    content = file.read()
+
+print(content)
+```
+
+#### Writing
+
+```python
+with open("notes.txt", "w") as file:
+    file.write("I am learning Python.")
+```
+
+#### Appending
+
+```python
+with open("notes.txt", "a") as file:
+    file.write("\nDay 5 completed.")
+```
+
+Using `with open()` helps ensure the file is properly closed.
+
+### Data Structure Comparison
+
+| Structure | Syntax | Main Characteristic |
+|---|---|---|
+| List | `[]` | Ordered and changeable |
+| Tuple | `()` | Ordered and fixed |
+| Dictionary | `{}` | Key-value pairs |
+| Set | `{}` | Unique values |
+
+### Key Takeaway
+
+Data structures help organize information in Python. Lists are useful for ordered collections that may change, tuples are useful for fixed collections, dictionaries represent key-value information, and sets handle unique values. File handling allows Python programs to read and write data stored outside the program.
+
+---
+
+**Day 5 Status: Complete ✅**
