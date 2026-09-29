@@ -131,3 +131,143 @@ Python fundamentals provide the base for later work with data analysis libraries
 ---
 
 **Day 3 Status: Complete ✅**
+
+
+## Day 4 — Conditions and Loops
+
+### 1. if Statement
+
+The `if` statement runs a block of code when a condition is true.
+
+```python
+age = 21
+
+if age >= 18:
+    print("Adult")
+```
+
+Python uses indentation to define the block of code.
+
+### 2. if / else
+
+Use `else` when there are two possible outcomes.
+
+```python
+age = 16
+
+if age >= 18:
+    print("Adult")
+else:
+    print("Minor")
+```
+
+### 3. if / elif / else
+
+Use `elif` when multiple conditions need to be checked.
+
+```python
+marks = 75
+
+if marks >= 90:
+    print("A")
+elif marks >= 75:
+    print("B")
+elif marks >= 60:
+    print("C")
+else:
+    print("D")
+```
+
+Conditions are checked from top to bottom.
+
+### 4. for Loop
+
+A `for` loop is used to repeat an action for a sequence or a range of values.
+
+```python
+for i in range(5):
+    print(i)
+```
+
+Output:
+
+```text
+0
+1
+2
+3
+4
+```
+
+### 5. range()
+
+Common forms:
+
+```python
+range(5)          # 0, 1, 2, 3, 4
+range(2, 6)       # 2, 3, 4, 5
+range(1, 10, 2)   # 1, 3, 5, 7, 9
+```
+
+The stop value is not included.
+
+### 6. while Loop
+
+A `while` loop repeats as long as its condition is true.
+
+```python
+count = 1
+
+while count <= 5:
+    print(count)
+    count += 1
+```
+
+The condition should eventually become false to avoid an infinite loop.
+
+### 7. break
+
+`break` immediately stops the loop.
+
+```python
+for i in range(10):
+    if i == 5:
+        break
+    print(i)
+```
+
+### 8. continue
+
+`continue` skips the current iteration and moves to the next one.
+
+```python
+for i in range(5):
+    if i == 2:
+        continue
+    print(i)
+```
+
+### Real-World Data Example
+
+Conditions can be used to classify values.
+
+```python
+spending = 15000
+
+if spending >= 10000:
+    print("High-value customer")
+else:
+    print("Regular customer")
+```
+
+### Key Takeaway
+
+**Condition = decision**
+
+**Loop = repetition**
+
+The main concepts learned today are `if`, `if/else`, `if/elif/else`, `for`, `range()`, `while`, `break`, and `continue`.
+
+---
+
+**Day 4 Status: Complete ✅**
