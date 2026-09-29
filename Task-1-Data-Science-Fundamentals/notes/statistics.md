@@ -185,3 +185,122 @@ These concepts form the foundation of descriptive statistics and will be used la
 ---
 
 **Day 6 Status: Complete**
+
+
+## Day 7 — Percentiles, Probability & Correlation
+
+### 1. Percentiles
+
+A percentile describes the position of a value relative to the rest of the observations. For example, the 75th percentile is a value such that roughly 75% of observations are at or below it, depending on the percentile convention used.
+
+### Percentage vs Percentile
+
+- **Percentage** describes performance out of a possible total.
+- **Percentile** describes relative position within a dataset.
+
+For example, scoring 80 out of 100 gives 80%, but the corresponding percentile depends on how other observations are distributed.
+
+### 2. Quartiles
+
+Quartiles divide an ordered dataset into four parts.
+
+- **Q1** = 25th percentile
+- **Q2** = 50th percentile = Median
+- **Q3** = 75th percentile
+
+### 3. Probability
+
+Probability measures the likelihood of an event.
+
+Formula:
+
+Probability = Favourable outcomes / Total outcomes
+
+Probability is between 0 and 1.
+
+Example:
+
+For a fair coin:
+
+P(Heads) = 1 / 2 = 0.5
+
+### 4. Basic Probability Terms
+
+- **Experiment:** A random process, such as tossing a coin.
+- **Outcome:** A possible result, such as Heads.
+- **Event:** One or more outcomes of interest.
+- **Independent events:** One event does not change the outcome probabilities of another event.
+
+### 5. Conditional Probability
+
+Conditional probability measures the probability of an event given that another condition is known.
+
+Notation:
+
+P(A | B)
+
+It is read as "probability of A given B."
+
+### 6. Correlation
+
+Correlation describes the direction and strength of a linear relationship between two numerical variables.
+
+The correlation coefficient is commonly represented by `r` and ranges from -1 to +1.
+
+- **r > 0:** Positive relationship
+- **r < 0:** Negative relationship
+- **r around 0:** Little or no linear relationship
+- **r = +1:** Perfect positive linear relationship
+- **r = -1:** Perfect negative linear relationship
+
+### Examples
+
+**Positive correlation:**
+Study hours increase and marks generally increase.
+
+**Negative correlation:**
+Price increases and demand generally decreases.
+
+**Weak or no clear correlation:**
+Shoe size and exam marks.
+
+### 7. Correlation Does Not Mean Causation
+
+A correlation between two variables does not automatically prove that one variable causes the other.
+
+For example, ice cream sales and swimming activity may both increase during hot weather. A third factor, such as temperature, can influence both.
+
+### 8. Python Correlation Example
+
+```python
+import pandas as pd
+
+data = {
+    "study_hours": [1, 2, 3, 4, 5],
+    "marks": [45, 50, 60, 70, 80]
+}
+
+df = pd.DataFrame(data)
+
+print(df["study_hours"].corr(df["marks"]))
+```
+
+A positive value indicates a positive linear relationship in this example.
+
+---
+
+## Key Takeaway
+
+**Percentile = Relative position**
+
+**Quartile = Dataset divided into four parts**
+
+**Probability = Likelihood of an event**
+
+**Correlation = Direction and strength of linear relationship**
+
+**Correlation is not proof of causation.**
+
+---
+
+**Day 7 Status: Complete ✅**
